@@ -13,6 +13,7 @@ public class ListaTarefa {
 
     public void adicionarTarefa(String descricao){
         tarefaList.add(new Tarefa(descricao));
+        System.out.println("**TAREFA ADICIONADA!");
     }
 
     public void  removerTarefa(String descricao){
@@ -31,5 +32,21 @@ public class ListaTarefa {
 
     public void obterDescricoesTarefas(){
         System.out.println(tarefaList);
+    }
+
+    public static void main(String[] args) {
+        ListaTarefa listaTarefa = new ListaTarefa();
+
+        System.out.println("-o numero total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
+        listaTarefa.adicionarTarefa("tarefa 1");
+        System.out.println("-o numero total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
+        listaTarefa.adicionarTarefa("tarefa 2");
+        System.out.println("-o numero total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
+        listaTarefa.removerTarefa("tarefa 2");
+
+        listaTarefa.adicionarTarefa("tarefa 22");
+        System.out.println("-o numero total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
+
+        listaTarefa.obterDescricoesTarefas();
     }
 }
