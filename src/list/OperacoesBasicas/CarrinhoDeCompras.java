@@ -58,10 +58,10 @@ public class CarrinhoDeCompras {
         CarrinhoDeCompras carrinhoDeCompras = new CarrinhoDeCompras();
 
         //add itens no carrinho
-        carrinhoDeCompras.adicionarItem("caneta",2.00,2);
+        carrinhoDeCompras.adicionarItem("caneta",1.00,2);
         carrinhoDeCompras.adicionarItem("lapis",1.00,1);
-        carrinhoDeCompras.adicionarItem("borracha",0.50,3);
-        carrinhoDeCompras.adicionarItem("borracha",0.50,3);
+        carrinhoDeCompras.adicionarItem("borracha",1d,3);
+        carrinhoDeCompras.adicionarItem("borracha",1d,3);
 
         //listando os itens adicionados
         carrinhoDeCompras.exibirItens();
@@ -71,7 +71,7 @@ public class CarrinhoDeCompras {
 
         //excluindo
         carrinhoDeCompras.removerItem("borracha");
-        
+
         //listando os itens adicionados
         carrinhoDeCompras.exibirItens();
 
